@@ -47,23 +47,23 @@ and your Employee data model:
 
 ```
 ##
-2. Implement the above model. This is a trickier model because it has an embedded document. You will have to research the [Mongoose Docs](https://mongoosejs.com/docs/subdocs.html) on how to implement a subdocument in your model
+2. Implement the above models with a schema for each. You can add or change up any of the properties, but make sure both models have at least 2 different data types, plus the nested object in the Employee model. This is a trickier model because it has an embedded document. You will have to research the [Mongoose Docs](https://mongoosejs.com/docs/subdocs.html) on how to implement a subdocument in your model
 
 ##
 
-3. Create a seed file with 5 employees
+3. Create a seed file with 3 companies, and  3 employees for each
+   
 ##
 
 4. Create a query file with the following queries:
-    - Create 3 companies
-    - create three employees for each company
+  
     -  return a list of all employees' full names (first_name + last_name) from one company
       - hint: you can use [projections](https://mongoosejs.com/docs/api.html#model_Model.find) to solve this
     - update one company to go "Public". Buy stock before the IPO is released, then avoid insider trading charges by the SEC
     - update one employee's salary, give them a $10,000 raise
     - Why pay big city rent when we can work from home somewhere in the suburbs? Update another employee's City to be somewhere a few miles away
     - delete an employee
-    - they're closing the Stamford branch! Delete all employees from one compmany
+    - they're closing the Stamford branch! Delete all employees from one company
     
 
 ## Bonus
