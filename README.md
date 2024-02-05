@@ -53,7 +53,7 @@ Use [faker](https://www.npmjs.com/package/faker) npm package to generate employe
 ```js
 const faker = require('faker')
 
-const employees = [...Array(100)].map(employee => (
+const employees = [...Array(10)].map(employee => (
     {
         first_name: faker.name.firstName(),
         last_name: faker.name.lastName(),
