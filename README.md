@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) The Office Employee Database
 
 ## SEBR 0116
 
@@ -21,9 +21,9 @@ Here is an example of the design for your Company  model:
 
 ```js
  _id: ObjectId("70ed7af8f25e417175c82f04"),
-company_name: "Big Business",
-headquarters: "New York, NY",
-product: "Rubber Chickens",
+company_name: "Dunder Mifflin",
+location: "Scranton, PA",
+product: "paper",
 type: "private",
 established: 2024
 ```
@@ -32,16 +32,16 @@ and your Employee data model:
 ```js
 {
     _id: ObjectId("5e417175c82e0bd7af0f2f04"),
-    company_id: bigBusiness[0]._id 
-    first_name: "John",
-    last_name: "Coltrane",
-    email: "ALove@Supre.me",
-    salary_in_usd: 75000,
+    company_id: dunderMifflin[0]._id 
+    first_name: "Dwight",
+    last_name: "Shrute",
+    email: "DShrute@dm.com",
+    salary_in_usd: 65000,
     address: {
-        street: "10 E 21St St",
-        city: "New York",
-        state: "NY",
-        zip: "10010"
+        street: "103 Beet St",
+        city: "Scranton",
+        state: "PA",
+        zip: "20010"
     }
 }
 
@@ -57,11 +57,14 @@ and your Employee data model:
 4. Create a query file with the following queries:
     - Create 3 companies
     - create three employees for each company
+    -  return a list of all employees' full names (first_name + last_name) from one company
+      - hint: you can use [projections](https://mongoosejs.com/docs/api.html#model_Model.find) to solve this
     - update one company to go "Public". Buy stock before the IPO is released, then avoid insider trading charges by the SEC
     - update one employee's salary, give them a $10,000 raise
+    - Why pay big city rent when we can work from home somewhere in the suburbs? Update another employee's City to be somewhere a few miles away
     - delete an employee
-    - return a list of all employees' full names (first_name + last_name)
-      - hint: you can use [projections](https://mongoosejs.com/docs/api.html#model_Model.find) to solve this
+    - they're closing the Stamford branch! Delete all employees from one compmany
+    
 
 ## Bonus
 
