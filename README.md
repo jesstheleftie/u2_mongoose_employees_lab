@@ -32,16 +32,16 @@ and your Employee data model:
 ```js
 {
     _id: ObjectId("5e417175c82e0bd7af0f2f04"),
-    company_id: dunderMifflin[0]._id 
+    company_id: dunderMifflin[0]._id, 
     first_name: "Dwight",
     last_name: "Shrute",
     email: "DShrute@dm.com",
     salary_in_usd: 65000,
     address: {
-        street: "103 Beet St",
+        street: "123 Beet St",
         city: "Scranton",
         state: "PA",
-        zip: "20010"
+        zip: 20010
     }
 }
 
@@ -79,6 +79,7 @@ const employees = [...Array(10)].map(employee => (
         last_name: chance.last(),
         email: chance.email(),
         job_title: chance.profession(),
+        salary: chance.integer({ min: 30000, max: 100000 })
         address: {
             street: chance.streetName(),
             city: chance.city(),
