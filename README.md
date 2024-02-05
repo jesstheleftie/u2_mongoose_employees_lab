@@ -13,14 +13,13 @@ Using the mongo-mongoose-queries lesson, implement the following in JavaScript:
 
 1. Create an `employeesDatabase`
 
-Here is an example of the design for your data model:
+Here is an example of the design for your Employeedata model:
 ```js
 {
     _id: ObjectId("5e417175c82e0bd7af0f2f04"),
-    first_name: "Bruno",
-    last_name: "Galvao",
-    email: "bruno.galvao@ga.co",
-    job_title: "Software Engineering Instructor",
+    first_name: "John",
+    last_name: "Coltrane",
+    email: ALove@Supre.me,
     address: {
         street: "10 E 21St St",
         city: "New York",
