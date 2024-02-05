@@ -14,15 +14,29 @@
 
 Using the mongo-mongoose-queries lesson, implement the following in JavaScript:
 
-1. Create an `employeesDatabase`
+1. Create an `employeesDatabase`. It will have 2 collecitions, Companies and Employees
 
-Here is an example of the design for your Employeedata model:
+Here is an example of the design for your Company  model:
+
+
+```js
+ _id: ObjectId("70ed7af8f25e417175c82f04"),
+company_name: "Big Business",
+headquarters: "New York, NY",
+product: "Rubber Chickens",
+type: "private",
+established: 2024
+```
+
+and your Employee data model:
 ```js
 {
     _id: ObjectId("5e417175c82e0bd7af0f2f04"),
+    company_id: bigBusiness[0]._id 
     first_name: "John",
     last_name: "Coltrane",
-    email: ALove@Supre.me,
+    email: "ALove@Supre.me",
+    salary_in_usd: 75000,
     address: {
         street: "10 E 21St St",
         city: "New York",
@@ -39,11 +53,12 @@ Here is an example of the design for your Employeedata model:
 
 3. Create a seed file with 5 employees
 ##
+
 4. Create a query file with the following queries:
-    - find all employees
-    - create one employee
-    - create three employees
-    - update one employee
+    - Create 3 companies
+    - create three employees for each company
+    - update one company to go "Public". Buy stock before the IPO is released, then avoid insider trading charges by the SEC
+    - update one employee's salary, give them a $10,000 raise
     - delete an employee
     - return a list of all employees' full names (first_name + last_name)
       - hint: you can use [projections](https://mongoosejs.com/docs/api.html#model_Model.find) to solve this
