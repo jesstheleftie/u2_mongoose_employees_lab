@@ -48,22 +48,22 @@ Here is an example of the design for your data model:
 
 ## Bonus
 
-Use [faker](https://www.npmjs.com/package/faker) npm package to generate employees in your seed file instead.
+Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead.
 
 ```js
-const faker = require('faker')
+const chance = require('Chance')
 
 const employees = [...Array(10)].map(employee => (
     {
-        first_name: faker.name.firstName(),
-        last_name: faker.name.lastName(),
-        email: faker.internet.email(),
-        job_title: faker.name.jobTitle(),
+        first_name: chance.first(),
+        last_name: chance.last(),
+        email: chance.email(),
+        job_title: chance.profession(),
         address: {
-            street: faker.address.streetName(),
-            city: faker.address.city(),
-            state: faker.address.state(),
-            zip: faker.address.zipCode()
+            street: chance.streetName(),
+            city: chance.city(),
+            state: chance.state(),
+            zip: chance.zipCode()
         }
     }
 ))
