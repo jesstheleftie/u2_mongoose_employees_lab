@@ -70,7 +70,7 @@ and your Employee data model:
 
 ## Bonus
 
-Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead.
+Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead. Run 'npm install chance' in your root folder (the one that has the package.json file) and use chance to generate fake data with ease!
 
 ```js
 const chance = require('Chance')
