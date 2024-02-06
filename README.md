@@ -89,10 +89,10 @@ const employees = [...Array(10)].map(employee => (
         job_title: chance.profession(),
         salary: chance.integer({ min: 30000, max: 100000 })
         address: {
-            street: chance.streetName(),
+            street: chance.word(),
             city: chance.city(),
             state: chance.state(),
-            zip: chance.zipCode()
+            zip: chance.integer({ min: 10001, max: 99999 })
         }
     }
 ))
