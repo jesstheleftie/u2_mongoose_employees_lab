@@ -87,7 +87,7 @@ const employees = [...Array(10)].map(employee => (
         last_name: chance.last(),
         email: chance.email(),
         job_title: chance.profession(),
-        salary: chance.integer({ min: 30000, max: 100000 })
+        salary_in_usd: chance.integer({ min: 30000, max: 100000 }),
         address: {
             street: chance.word(),
             city: chance.city(),
