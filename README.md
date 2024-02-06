@@ -38,7 +38,7 @@ and your Employee data model:
     first_name: "Dwight",
     last_name: "Shrute",
     email: "DShrute@dm.com",
-    job_title: "salesman,
+    job_title: "salesman",
     salary_in_usd: 65000,
     address: {
         street: "123 Beet St",
