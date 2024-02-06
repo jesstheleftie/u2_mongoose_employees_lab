@@ -74,6 +74,12 @@ Use [chance](https://www.npmjs.com/package/chance) npm package to generate emplo
 
 ```js
 const chance = require('Chance')
+///
+
+const chance = new Chance()
+
+///
+
 
 const employees = [...Array(10)].map(employee => (
     {
