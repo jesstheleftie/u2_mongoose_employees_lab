@@ -20,12 +20,14 @@ Here is an example of the design for your Company  model:
 
 
 ```js
+{
  _id: ObjectId("70ed7af8f25e417175c82f04"),
 company_name: "Dunder Mifflin",
 location: "Scranton, PA",
 product: "paper",
 type: "private",
-established: 2024
+established: 2003
+}
 ```
 
 and your Employee data model:
