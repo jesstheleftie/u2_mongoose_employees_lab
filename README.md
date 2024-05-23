@@ -14,7 +14,7 @@
 
 Using the mongo-mongoose-queries lesson, implement the following in JavaScript:
 
-1. Create an `employeesDatabase`. It will have 2 collecitions, Companies and Employees
+1. Create an `employeesDatabase`. It will have 2 collecitions, Companies and Employees. Companies will be the parent, while Employees will be the related child
 
 Here is an example of the design for your Company  model:
 
