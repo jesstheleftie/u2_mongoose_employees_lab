@@ -73,7 +73,7 @@ and your Employee data model:
 
 *Do not attempt Chance until you have your data already seeded, and at least 2 of your Query.js functions working!*
 
-Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead. Run 'npm install chance' in your root folder (the one that has the package.json file) and use chance to generate fake data with ease!
+Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead. Run 'npm install chance' in your root folder (the one that has the package.json file) and use chance to generate fake data with ease! Once you have these in (and your Company model Find'ed as well), run your seed/employees.js file
 
 ```js
 const chance = require('Chance')
@@ -84,6 +84,8 @@ const chance = new Chance()
 ///
 
 
+const company = //find your parent model!
+
 const employees = [...Array(10)].map(employee => (
     {
         first_name: chance.first(),
@@ -91,6 +93,7 @@ const employees = [...Array(10)].map(employee => (
         email: chance.email(),
         job_title: chance.profession(),
         salary_in_usd: chance.integer({ min: 30000, max: 100000 }),
+        company = company.id //how should this look? Go back to your lesson to find out!
         address: {
             street: chance.word(),
             city: chance.city(),
