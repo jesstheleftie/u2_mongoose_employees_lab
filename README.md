@@ -40,17 +40,14 @@ and your Employee data model:
     email: "DShrute@dm.com",
     job_title: "salesman",
     salary_in_usd: 65000,
-    address: {
-        street: "123 Beet St",
-        city: "Scranton",
-        state: "PA",
-        zip: 20010
-    }
+    address: "4 Beet Rd., Scranton PA 13425"
 }
 
 ```
 ##
-2. Implement the above models with a schema for each. You can add or change up any of the properties, but make sure both models have at least 2 different data types, plus the nested object in the Employee model. This is a trickier model because it has an embedded document. You will have to research the [Mongoose Docs](https://mongoosejs.com/docs/subdocs.html) on how to implement a subdocument in your model
+2. Implement the above models with a schema for each. You can add or change up any of the properties, but make sure both models have at least 2 different data types.
+
+Try to put a nested object in the Employee model for address. This is a trickier model because it has an embedded document. You will have to research the [Mongoose Docs](https://mongoosejs.com/docs/subdocs.html) on how to implement a subdocument in your model
 
 ##
 
