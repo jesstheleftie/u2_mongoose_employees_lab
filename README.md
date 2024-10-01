@@ -68,8 +68,27 @@ Try to put a nested object in the Employee model for address. This is a trickier
 
 ## Bonus
 
-*Do not attempt Chance until you have your data already seeded, and at least 2 of your Query.js functions working!*
+*Do not attempt these until you have your data already seeded, and at least 2 of your Query.js functions working!*
+### Pt 1 - Embedded Data 
 
+- Convert your address property from a single string to an embedded Subdocument. Check the Mongoose doc's for what this entails!
+- Your data should look something like this
+
+  ```js
+
+  {
+  ...
+  address {
+   street: `123 fake st`,
+   city: `Fakesville`,
+   state: `FK`,
+   zipCode: 12345
+  }
+ }  
+  
+
+
+### Pt 2 - Chance
 Use [chance](https://www.npmjs.com/package/chance) npm package to generate employees in your seed file instead. Run 'npm install chance' in your root folder (the one that has the package.json file) and use chance to generate fake data with ease! Once you have these in (and your Company model Find'ed as well), run your seed/employees.js file
 
 ```js
